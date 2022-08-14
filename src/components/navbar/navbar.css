@@ -1,0 +1,74 @@
+.nav__wrapper{
+    background-color: azure;
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5rem;
+
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar__links a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.navbar__links a span{
+  color: #fff;
+ background-color: var(--bg-color);
+ padding: .2rem .7rem;
+ border-radius: .2rem;
+}
+.navbar__logo h3 a {
+  color:#000;
+
+}
+.hamburger{
+    font-size: 24px;
+    display: none;
+}
+
+.navbar__logo h3 a span{
+color: #fff;
+ background-color: var(--bg-color);
+ padding: .2rem .4rem;
+ border-radius: .2rem;
+}
+
+@media screen and (max-width :898px) {
+
+.navbar__links{
+    display: block;
+    flex-direction: column;
+    transition: all 0.7 ease-0ut;
+    align-items: end;
+    margin-top: 50px;
+    margin-left: auto;
+
+
+}
+.hamburger{
+    display: block;
+    align-items:center ;
+    font-size: 50px;
+    padding-top: 20px;
+
+
+}
+.links{
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+
+
+}
