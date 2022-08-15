@@ -29,7 +29,9 @@ const Register = () => {
               <button type="submit" value="">
                 Submit
               </button>
-              <a href="#">Already registered? Sign in</a>
+              <p>
+                Already registered? <a href="#">Sign in</a>
+              </p>
             </div>
           </div>
         </form>
