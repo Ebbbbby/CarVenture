@@ -7,8 +7,6 @@ import { basicSchema } from "../../../schemas";
 
 
 const onSubmit = async (values, actions)=>{
-    console.log(values);
-    console.log(actions);
     await new Promise((resolve) => setTimeout(resolve , 1000));
     actions.resetForm();
 
@@ -25,7 +23,7 @@ const Register = () => {
     },
     validationSchema:basicSchema,onSubmit
   });
-  console.log(errors)
+
 
   return (
     <section className="register__wrapper">
@@ -112,7 +110,7 @@ const Register = () => {
               )}
             </div>
             <div className="submit__btn">
-              <button type="submit" value="" disabled ={isSubmitting}>
+              <button type="submit" disabled ={isSubmitting}>
                 Register
               </button>
               <span>
