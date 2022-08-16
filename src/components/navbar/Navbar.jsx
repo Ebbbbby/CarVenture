@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="navbar__container">
           <div className="navbar__logo">
             <h3>
-              <a href="#">
+              <a href="/logo">
                 Car<span>Venture.</span>
               </a>
             </h3>
