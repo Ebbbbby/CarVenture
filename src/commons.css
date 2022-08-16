@@ -28,3 +28,7 @@ h1{
   font-size: 64px;
   line-height: 70px;
 }
+label{
+  font-weight: 600;
+  color: rgb(102, 102, 102)
+}

@@ -1,25 +1,19 @@
 import React from "react";
-import {BiArrowBack} from 'react-icons/bi'
+import { BiArrowBack } from "react-icons/bi";
 import "../Auth/register.css";
-const Register = () => {
+const Login = () => {
   return (
     <section className="register__wrapper">
       <div className="container">
         <form action="">
           <div className="form__control">
             <div className="controls">
-              <h3>Register</h3>
-              <button><BiArrowBack/></button>
-            </div>
-            <div className="form__input">
-              <label htmlFor="">Firstname</label>
-              <input type="text" value="" />
+              <h3>Login</h3>
+              <button>
+                <BiArrowBack />
+              </button>
             </div>
 
-            <div className="form__input">
-              <label htmlFor="">Lastname</label>
-              <input type="text" value="" />
-            </div>
 
             <div className="form__input">
               <label htmlFor="">Email</label>
@@ -32,10 +26,10 @@ const Register = () => {
             </div>
             <div className="submit__btn">
               <button type="submit" value="">
-                Register
+               Login
               </button>
               <span>
-                Already registered? <a href="#">Sign in</a>
+                Not registerd?<a href="#">Sign Up</a>
               </span>
             </div>
           </div>
@@ -45,4 +39,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
