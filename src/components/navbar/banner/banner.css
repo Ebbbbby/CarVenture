@@ -1,0 +1,54 @@
+.banner__container {
+  width: 100%;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  background: linear-gradient(106.34deg, rgba(0, 0, 0, 0.4) 31.76%, rgba(203, 39, 39, 0) 84.65%);
+border-radius: 5px;
+}
+.banner__text {
+  position: absolute;
+  top: 0%;
+  padding: 0 2.8rem;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.banner__text h1 {
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.banner__text p {
+  width: 423px;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .banner__text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.banner__text p {
+  font-size: 15px;
+  width: 300px;
+}
+.banner__text {
+  padding: 0 40px;
+  line-height: 19px;
+}
+@media screen and (max-width: 568px) {
+  .banner__text h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .banner__text {
+    padding: 20px 30px;
+  }
+  .banner__text p {
+    display: none;
+  }
+}

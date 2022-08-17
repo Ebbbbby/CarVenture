@@ -14,20 +14,25 @@ body {
   text-decoration: none;
   list-style: none;
 
+
+
+}
+body{
+   background:rgb(250, 248, 248);
 }
 .container{
-  padding: 0 4rem;
+  padding: 0;
   overflow: hidden;
 
+}
+
+.container__pad{
+  padding: 0 2.8rem;
 }
 :root{
 --bg-color: #1F4590;
 }
-h1{
-  font-weight:800;
-  font-size: 64px;
-  line-height: 70px;
-}
+
 label{
   font-weight: 600;
   color: rgb(102, 102, 102)
