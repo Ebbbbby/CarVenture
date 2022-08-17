@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { useState, useEffect } from "react";
+import {  Link } from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -31,24 +32,24 @@ const Navbar = () => {
           {(isMobile || screenWidth > 898) && (
             <ul className="navbar__links">
               <li className="links">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="links">
-                <a href="/cars">Cars</a>
+                <Link to="/cars">Cars</Link>
               </li>
               <li className="links">
-                <a href="/offers">Offers</a>
+                <Link to="/offers">Offers</Link>
               </li>
               <li className="links">
-                <a href="/locations">Locations</a>
+                <Link to="/locations">Locations</Link>
               </li>
               <li className="links">
-                <a href="/contacts">Contact</a>
+                <Link to="/contacts">Contact</Link>
               </li>
               <li className="links">
-                <a href="/signup">
+                <Link to="/login">
                   <span>Sign Up</span>
-                </a>
+                </Link>
               </li>
             </ul>
           )}

@@ -3,6 +3,8 @@ import { useFormik } from "formik";
 import { BiArrowBack } from "react-icons/bi";
 import * as Yup from 'yup';
 import "../Auth/register.css";
+import { Link } from "react-router-dom";
+
 
 const passwordRules =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{5,}$/;
@@ -41,7 +43,9 @@ const Login = () => {
             <div className="controls">
               <h3>Login</h3>
               <button>
-                <BiArrowBack />
+                <Link to ='/'>
+                  <BiArrowBack />
+                </Link>
               </button>
             </div>
 
@@ -87,7 +91,7 @@ const Login = () => {
                 Login
               </button>
               <span>
-                Not registerd?<a href="/signUp">Sign Up</a>
+                Not registerd?<Link to="/register">Sign Up</Link>
               </span>
             </div>
           </div>

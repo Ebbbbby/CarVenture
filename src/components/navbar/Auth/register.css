@@ -41,8 +41,13 @@
   padding: 10px 50px;
   margin: 6px 0 6px 0px;
   width: 100%;
-  /* margin: 5px auto; */
+
 }
+.form__input input::placeholder{
+    font-size: 10px;
+    color:rgb(214, 212, 212) ;
+}
+
 .submit__btn {
   margin-top: 1.7rem;
   max-width: 100%;

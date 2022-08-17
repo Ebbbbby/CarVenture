@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import { BiArrowBack } from "react-icons/bi";
 import "../Auth/register.css";
 import { basicSchema } from "../../../schemas";
+import {Link} from 'react-router-dom';
 
 
 
@@ -33,7 +34,9 @@ const Register = () => {
             <div className="controls">
               <h3>Register</h3>
               <button>
-                <BiArrowBack />
+                <Link to="/">
+                  <BiArrowBack />
+                </Link>
               </button>
             </div>
             <div className="form__input">
@@ -110,11 +113,11 @@ const Register = () => {
               )}
             </div>
             <div className="submit__btn">
-              <button type="submit" disabled ={isSubmitting}>
+              <button type="submit" disabled={isSubmitting}>
                 Register
               </button>
               <span>
-                Already registered? <a href="/signUp">Sign in</a>
+                Already registered? <Link to="/login">Sign in</Link>
               </span>
             </div>
           </div>
