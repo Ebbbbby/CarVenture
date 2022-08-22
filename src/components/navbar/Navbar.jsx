@@ -19,7 +19,7 @@ const Navbar = () => {
   }, [])
   return (
     <section className="nav__wrapper">
-      <div className="container__pad">
+      <div className="container__padding">
         <div className="navbar__container">
           <div className="navbar__logo">
             <h3>

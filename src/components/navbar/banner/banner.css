@@ -26,7 +26,12 @@ border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
 }
-@media screen and (max-width: 768px) {
+
+.banner__inputs{
+  display: flex;
+  align-items: center;
+}
+/* @media screen and (max-width: 768px) {
   .banner__text h1 {
     font-size: 30px;
     line-height: 40px;
@@ -51,4 +56,4 @@ border-radius: 5px;
   .banner__text p {
     display: none;
   }
-}
+} */

@@ -1,6 +1,9 @@
 import React from 'react';
 import Hero from '../../../images/HeroBG.png';
 import './banner.css'
+import BannerLabel from './BannerLabel';
+import PickUp from './PickUp';
+import ReturnDate from './ReturnDate';
 
 
 const Banner = () => {
@@ -20,6 +23,11 @@ const Banner = () => {
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
+        </div>
+        <div className="container__padding banner__inputs">
+          <BannerLabel />
+          <PickUp />
+          <ReturnDate/>
         </div>
       </div>
     </section>
