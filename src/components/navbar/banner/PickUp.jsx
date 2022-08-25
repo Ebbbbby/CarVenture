@@ -2,18 +2,24 @@ import React from 'react'
 import DatePicker from "react-date-picker";
 import { useState } from "react";
 
-const defaultPickValue = "Select Date";
+const defaultPickValue = "Pickup Date";
 
 
 const PickUp = () => {
-    const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedDate, setSelectedDate] = useState(defaultPickValue);
 
   return (
     <>
-      <div>
-        <label htmlFor="">{defaultPickValue}</label>
+      <div className="input-value">
+        <label htmlFor="pickUp">{defaultPickValue}</label>
         <br />
-        <input type="date" name="" id="" />
+        <input
+        placeholder='pick up'
+          type="date"
+          name="pickUp"
+          id="PickUp"
+          data-date-inline-picker="true"
+        />
       </div>
     </>
   );

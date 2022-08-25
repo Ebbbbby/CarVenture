@@ -6,8 +6,6 @@ import {
     Route,
 } from 'react-router-dom';
 import Banner from "./components/navbar/banner/Banner";
-import Practice from "./components/Practice";
-
 
 function App() {
   return (
@@ -19,7 +17,7 @@ function App() {
           <Route exact path="/login" element={<Login />}></Route>
         </Routes>
         <Banner />
-        <Practice />
+
       </div>
     </>
   );

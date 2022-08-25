@@ -5,8 +5,13 @@
 
 .banner {
   width: 100%;
-  background: linear-gradient(106.34deg, rgba(0, 0, 0, 0.4) 31.76%, rgba(203, 39, 39, 0) 84.65%);
-border-radius: 5px;
+  background: linear-gradient(
+    106.34deg,
+    rgba(0, 0, 0, 0.4) 31.76%,
+    rgba(203, 39, 39, 0) 84.65%
+  );
+  border-radius: 5px;
+  height: 630px;
 }
 .banner__text {
   position: absolute;
@@ -14,6 +19,7 @@ border-radius: 5px;
   padding: 0 2.8rem;
   color: #fff;
   margin-top: 20px;
+  width: 80%;
 }
 
 .banner__text h1 {
@@ -27,16 +33,100 @@ border-radius: 5px;
   font-size: 18px;
 }
 
-.banner__inputs{
+.banner__inputs {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  background: #ffffff;
+  width: 1096px;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  padding: 20px 70px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  gap: 4rem;
 }
-/* @media screen and (max-width: 768px) {
+.banner__btn {
+  margin-left: auto;
+}
+.banner__btn button {
+  padding: 13px 10px;
+  border: 0;
+  background-color: var(--bg-color);
+  color: #fff;
+  border-radius: 3px;
+}
+.input-value input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  gap: 3.5rem;
+}
+
+/* .input-value input[type="date"]::-webkit-inner-spin-button,
+.input-value input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    border:1px solid red;
+    color: red;
+} */
+
+@media screen and (max-width: 768px) {
+  .banner__text {
+    padding: 0;
+    left: 50%;
+    top: 15%;
+
+    transform: translate(-50%, -50%);
+  }
   .banner__text h1 {
     font-size: 30px;
     line-height: 40px;
+    width: 90%;
+    text-align: center;
   }
+  .banner__text p {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .banner {
+    height: 800px;
+  }
+  .banner__inputs {
+    flex-direction: column;
+    height: 455px;
+    left: 50%;
+    top: 90%;
+    width: 80%;
+    gap: .5rem;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+  .banner__btn {
+  margin-left: 0;
+
 }
+.input-value input,
+select {
+  width: 300px;
+  padding: 12px 20px;
+  border: 1px solid grey;
+  border-radius: 3px;
+
+}
+}
+/*
 .banner__text p {
   font-size: 15px;
   width: 300px;

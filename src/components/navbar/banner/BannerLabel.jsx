@@ -1,14 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const defaultSelectValue = "Select a fruit";
+const defaultSelectValue = "Select location";
 const BannerLabel = () => {
   const [selected, setSelected] = useState(defaultSelectValue);
 
 
   return (
-    <div className="">
-      <label htmlFor="fruits">Fruits</label> <br />
+    <div className="input-value">
+      <label htmlFor="fruits">Pick up Location</label> <br />
       <select
         id="fruits"
         name="fruits"

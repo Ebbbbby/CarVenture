@@ -1,26 +1,24 @@
 import React from "react";
 import { useState } from "react";
 
-const defaultPickValue = "Select Date";
+const defaultReturnValue = "Return Date";
 
 const ReturnDate = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const handleDate =(e) =>{
-   
-  }
+  const [selectedDate, setSelectedDate] = useState(defaultReturnValue);
+
 
   return (
     <>
-      <div className="">
-        <label htmlFor="">{defaultPickValue}</label>
+      <div className="input-value">
+        <label htmlFor="return">{defaultReturnValue}</label>
         <br />
-      <input type="date" name="" id="" onChange={(e)=>handleDate(e)} />
+      <input type="date" name="return" id="return" />
       </div>
 
       <div className="banner__btn">
         <label htmlFor="submit"></label>
         <br />
-      <button type="submit">Search</button>
+      <button type="submit">Search for Cars</button>
       </div>
     </>
   );
