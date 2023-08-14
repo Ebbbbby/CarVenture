@@ -24,11 +24,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div className="container__padding banner__inputs">
-          <BannerLabel />
-          <PickUp />
-          <ReturnDate/>
-        </div>
+     
       </div>
     </section>
   );
